@@ -29,8 +29,8 @@ export const assets = writable([]);
 export const probEdit = writable(false);
 
 // Settings
-export const proUser = writable(false);
-export const warpAmount = writable('default');
+export const proUser = writable(true);
+export const warpAmount = writable('unlimited');
 export const autoskip = writable({ express: false, art: true });
 export const liteMode = writable(false);
 export const isPWA = writable(false);

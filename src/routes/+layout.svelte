@@ -134,13 +134,6 @@
 	/>
 	<link
 		rel="preload"
-		href="/fonts/optimized_ja_web.woff2"
-		as="font"
-		type="font/woff2"
-		crossorigin
-	/>
-	<link
-		rel="preload"
 		href="/fonts/optimized_zh_web.woff2"
 		as="font"
 		type="font/woff2"
@@ -176,13 +169,6 @@
 	@font-face {
 		font-family: 'StarRail_Global_Web';
 		src: url('/fonts/optimized_global_web.woff2') format('woff2');
-		font-weight: normal;
-		font-style: normal;
-	}
-
-	@font-face {
-		font-family: 'StarRail_JA_Web';
-		src: url('/fonts/optimized_ja_web.woff2') format('woff2');
 		font-weight: normal;
 		font-style: normal;
 	}

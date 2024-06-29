@@ -142,16 +142,6 @@
 			<i class="hsr-cog" />
 		</button>
 
-		{#if !$muted.bgm}
-			<button title="PhonoGraph" on:click={openPhonograph}>
-				<i class="hsr-phonograph" />
-			</button>
-		{/if}
-
-		<button title="Feedback" on:click={toggleChat}>
-			<i class="hsr-chat" />
-		</button>
-
 		<button on:click={handleFullscreen} title="Fullscreen">
 			<i class="hsr-{!fullscreen ? 'fullscreen' : 'shrink'}" />
 		</button>

@@ -28,14 +28,6 @@
 			active={activeMenu === 'updatelog'}
 			on:click={() => select('updatelog')}
 		/>
-
-		{#if !$isPWA}
-			<NavLinkItem
-				icon="honor"
-				active={activeMenu === 'prouser'}
-				on:click={() => select('prouser')}
-			/>
-		{/if}
 	</NavLink>
 </div>
 

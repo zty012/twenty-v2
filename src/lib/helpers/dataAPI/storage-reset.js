@@ -39,7 +39,7 @@ export const storageReset = async ({ keepSetting = false, clearCache = false } =
 	if (clearCache) await clearCacheStorage();
 
 	starterRemaining.set(50);
-	showStarterBanner.set(true);
+	// showStarterBanner.set(true);
 	regReward.set({ rollcount: 0, isClaimed: false });
 	const customTracks = storageLocal.get('customTracks');
 
@@ -76,7 +76,7 @@ export const storageReset = async ({ keepSetting = false, clearCache = false } =
 	activeBanner.set(0);
 
 	animatedLC.set(false);
-	warpAmount.set('default');
+	// warpAmount.set('default');
 	autoskip.set({ express: false, art: true });
 	muted.set({ bgm: false, sfx: false });
 	probEdit.set(false);

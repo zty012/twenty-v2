@@ -96,7 +96,7 @@
 			<BnCharacter {item} />
 			<div class="frame">
 				<CharacterFrame
-					event2={bannerIndex > 1 || (!$showStarterBanner && bannerIndex > 0)}
+					event2={bannerIndex > 1 || (!false && bannerIndex > 0)}
 					{item}
 				/>
 			</div>
@@ -107,7 +107,7 @@
 			<div class="frame">
 				<LightconeFrame
 					{item}
-					event2={bannerIndex > 3 || (!$showStarterBanner && bannerIndex > 2)}
+					event2={bannerIndex > 3 || (!false && bannerIndex > 2)}
 				/>
 			</div>
 		{/if}

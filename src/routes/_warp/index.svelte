@@ -62,7 +62,7 @@
 		if (bannerType !== 'starter') return;
 
 		const starterCount = rollCounter.get('starter');
-		if (starterCount > 49) return showStarterBanner.set(false);
+		// if (starterCount > 49) return showStarterBanner.set(false);
 	};
 	setContext('showSplashArt', showSplashArt);
 

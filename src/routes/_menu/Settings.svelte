@@ -34,7 +34,7 @@
 	const handleSelectAmount = ({ detail }) => {
 		const { selected } = detail;
 		localConfig.set('warpAmount', selected);
-		warpAmount.set(selected);
+		// warpAmount.set(selected);
 	};
 
 	// AutoSkip
@@ -91,21 +91,21 @@
 			{$t('menu.language')}
 		</OptionsItem>
 
-		<OptionsItem
+		<!-- <OptionsItem
 			showOption={activeOption === 'warpnumber'}
 			optionName="warpnumber"
 			activeIndicator={$warpAmount}
 			on:select={handleSelectAmount}
 		>
 			{$t('menu.warpNumber')}
-		</OptionsItem>
+		</OptionsItem> -->
 
 		<OptionsItem optionName="switchbanner">
 			{$t('menu.switchbanner')}
 		</OptionsItem>
 
 		<OptionsItem optionName="reset">{$t('menu.clearStorage')}</OptionsItem>
-		<OptionsItem optionName="feedback">{$t('menu.giveComment')}</OptionsItem>
+		<!-- <OptionsItem optionName="feedback">{$t('menu.giveComment')}</OptionsItem> -->
 
 		<!-- Visual -->
 		<h2>{$t('menu.visual')}</h2>
@@ -166,28 +166,6 @@
 			<div transition:fly|local={{ y: -10 }}>
 				<OptionsItem sub optionName="sfxVolume" mode="slider">
 					{$t('menu.sfxVolume')}
-				</OptionsItem>
-			</div>
-		{/if}
-
-		<OptionsItem
-			showOption={activeOption === 'muteBGM'}
-			optionName="muteBGM"
-			activeIndicator={$muted.bgm}
-			on:select={handleSound}
-		>
-			{$t('menu.mutedBGM')}
-		</OptionsItem>
-
-		{#if !$muted.bgm}
-			<div transition:fly|local={{ y: -10 }}>
-				<OptionsItem sub optionName="backsound">
-					{$t('phonograph.choosebgm')}
-				</OptionsItem>
-			</div>
-			<div transition:fly|local={{ y: -10 }}>
-				<OptionsItem sub optionName="phonoVolume" mode="slider">
-					{$t('menu.musicVolume')}
 				</OptionsItem>
 			</div>
 		{/if}

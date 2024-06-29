@@ -26,7 +26,7 @@
 		playSfx();
 		accessKey.clear();
 		checkLocal();
-		proUser.set(false);
+		// proUser.set(false);
 		restartBannerVersion();
 		showModal = false;
 		value = '';

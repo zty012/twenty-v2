@@ -42,6 +42,7 @@
 	{/if}
 
 	<div class="item-wrapper">
+		<div class="new nametag">{$t(itemName)}</div>
 		{#if isNew}
 			<div class="new">{$t('new')}</div>
 		{/if}
@@ -510,6 +511,22 @@
 		border-bottom: calc(0.0015 * var(--item-width)) solid #ffd34f;
 		border-right: calc(0.00125 * var(--item-width)) dashed #ffd34f;
 		border-left: calc(0.00125 * var(--item-width)) dashed #ffd34f;
+		padding: calc(0.002 * var(--item-width)) calc(0.0085 * var(--item-width));
+	}
+	.nametag {
+		left: 0;
+		right: unset;
+		transform: translate(12%, 50%);
+		font-size: 1.3em;
+		/* 蓝色 */
+		background-color: #183244;
+		color: #8be3fe;
+		text-shadow: 0 0 1rem rgb(176, 241, 253);
+		box-shadow: 0 0 0.5rem rgb(81, 220, 255);
+		border-top: calc(0.00125 * var(--item-width)) dotted #4fb9ff;
+		border-bottom: calc(0.0015 * var(--item-width)) solid #4fb9ff;
+		border-right: calc(0.00125 * var(--item-width)) dashed #4fb9ff;
+		border-left: calc(0.00125 * var(--item-width)) dashed #4fb9ff;
 		padding: calc(0.002 * var(--item-width)) calc(0.0085 * var(--item-width));
 	}
 

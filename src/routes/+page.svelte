@@ -51,7 +51,7 @@
 	const checkBannerStatus = async (initBanner) => ({ status } = await initBanner);
 	$: initBanner = initializeBanner($activeVersion, $activePhase);
 	$: checkBannerStatus(initBanner);
-	$: handleShowStarter($showStarterBanner);
+	$: handleShowStarter(false);
 
 	const handleLiteMode = () => {
 		const lLitemode = localConfig.get('litemode');

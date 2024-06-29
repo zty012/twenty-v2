@@ -57,7 +57,7 @@
 
 		if (banner === 'starter') {
 			rollCounter.set('starter', 0);
-			showStarterBanner.set(true);
+			// showStarterBanner.set(true);
 			starterRemaining.set(50);
 		}
 		clear();

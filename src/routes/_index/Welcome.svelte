@@ -25,9 +25,9 @@
 		const { validity, status } = await accessKey.initialLoad();
 		if (status === 'offline') return retry();
 
-		proUser.set(!!validity);
+		// proUser.set(!!validity);
 		// if ($isPWA) return showAd.set(false);
-		showAd.set(!validity);
+		// showAd.set(!validity);
 	};
 
 	onMount(async () => {

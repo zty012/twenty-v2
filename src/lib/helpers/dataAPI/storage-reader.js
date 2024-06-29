@@ -57,7 +57,7 @@ const importLocalConfig = () => {
 	animatedLC.set(llivecone);
 
 	const lWarpAmount = localConfig.get('warpAmount') || 'default';
-	warpAmount.set(lWarpAmount);
+	// warpAmount.set(lWarpAmount);
 
 	const starterRollCount = rollCounter.get('starter') || 0;
 	starterRemaining.set(50 - starterRollCount);
@@ -110,7 +110,7 @@ const restartBannerVersion = () => {
 const checkStarterBanner = () => {
 	const starterRollCount = rollCounter.get('starter');
 	const isShowStarter = starterRollCount < 50;
-	showStarterBanner.set(isShowStarter);
+	// showStarterBanner.set(isShowStarter);
 	return isShowStarter;
 };
 
