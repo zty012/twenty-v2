@@ -1,5 +1,4 @@
 <script>
-	import { registerSW } from 'virtual:pwa-register';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 	import { onMount, setContext } from 'svelte';
@@ -75,7 +74,6 @@
 		});
 
 		loadTracks(); // Load Phonograph Tracks
-		registerSW(); // Service Worker for Faster Load
 		wakeLock(); // Prevent screen off while open the app
 		await IDBUpdater(); // update site data to the newer version
 
