@@ -85,28 +85,6 @@
 <svelte:window bind:innerHeight bind:innerWidth />
 
 <svelte:head>
-	<meta name="description" content={DESCRIPTION} />
-	<meta name="keywords" content={KEYWORDS} />
-	<meta property="al:web:url" content={HOST} />
-	<link rel="fluid-icon" href="{HOST}/meta-picture.jpg" title={APP_TITLE} />
-
-	<meta property="og:url" content={HOST} />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content={APP_TITLE} />
-	<meta property="og:description" content={DESCRIPTION} />
-	<meta property="og:image" content="{HOST}/meta-picture.jpg" />
-
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta property="twitter:domain" content={HOST.replace('https://', '').replace('http://', '')} />
-	<meta property="twitter:url" content={HOST} />
-	<meta name="twitter:title" content={APP_TITLE} />
-	<meta name="twitter:description" content={DESCRIPTION} />
-	<meta name="twitter:image" content="{HOST}/meta-picture.jpg" />
-
-	{#if !dev}
-		<link rel="manifest" href="/appmanifest.json" />
-	{/if}
-
 	{#if $page.url.pathname !== '/'}
 		<link rel="canonical" href={HOST} />
 	{/if}
